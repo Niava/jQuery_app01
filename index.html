@@ -31,7 +31,15 @@
 		//select an element in nth
 		// jQuery('a:eq(1)').html('second link');
 
-		
+		//looping within an object and display each element
+		var urls=[];
+		jQuery('a').each(function(i){
+			urls[i] = $(this).attr('href');
+		});
+
+		alert(urls.join(','));
+
+
 	</script>
 </body>
 </html>
